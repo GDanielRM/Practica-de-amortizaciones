@@ -1,0 +1,150 @@
+body{
+	background: #F7F5E6;
+	font-family: 'Arial';
+	color: #FFFFFF;
+}
+
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background: url(../img/Fondo_prueba.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+}
+
+.fondo_titulos{
+	background-color: #333A56;
+	color: #FFFFFF;
+}
+
+.fondo_cuerpos{
+	background-color: #52658F;
+}
+
+.tamano_boton{
+	font-size: 8px;
+	height: 30px;
+}
+
+.negritas{
+	font-weight: bold;
+}
+
+.liquidado{
+	font-weight: bold;
+	color: #00ff00;
+}
+
+.vencido{
+	font-weight: bold;
+	color: #ff0000;
+}
+
+#footer_container{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #E8E8E8;
+  color: #333A56;
+  font-size: 11px;
+  text-align: center;
+}
+
+.btn1{
+	background-color: #80ff80;
+	color: #FFFFFF;
+}
+
+.btn2{
+	background-color: #8080ff;
+	color: #FFFFFF;
+}
+
+.btn1:hover {
+	background: #33ff33;
+	opacity: 0.8;
+}
+
+.btn2:hover {
+	background: #3333ff;
+	opacity: 0.8;
+}
+
+
+.titulo_alerta {
+	color: red;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.lbl_sub_t {
+	font-weight: bold;
+}
+
+#alerta_container {
+	position: fixed;
+	width: 220px;
+	border: solid 1px;
+	border-color: black;
+	z-index: 1;
+	text-align: center;
+	background-color: #52658F;
+}
+
+.alerta_container_normal {
+	right: -250px;
+	top: 10%;
+}
+
+#alerta_vencido {
+	margin-left: 10px;
+}
+
+.alerta_aparece {
+	animation-name: animation_aparece_alerta;
+	animation-duration: 0.5s;
+}
+
+.alerta_desaparece{
+	animation-name: animation_desaparece_alerta;
+	animation-duration: 0.5s;
+}
+
+.alerta_se_mantiene{
+	position: fixed;
+	z-index: 1;
+	right: 0px;
+	top: 10%;
+}
+
+@keyframes animation_aparece_alerta
+{
+	from{
+			right: -250px;
+			top: 10%;
+		}
+	to{
+			right: 0px;
+			top: 10%;
+		}
+}
+
+@keyframes animation_desaparece_alerta
+{
+	from{
+			right: 0px;
+			top: 10%;
+		}
+	to{
+			right: -250px;
+			top: 10%;
+		}
+}
